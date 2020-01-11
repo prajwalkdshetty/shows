@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let filter of filters" >
+    <h3>{{filter.name}}</h3>
+    <ul>
+      <li *ngFor="let filterItem of filter.types" >
+          <label><input type="checkBox" name="{{filterItem.name}}" (change)="filterSelected(filterItem.name, filterItem.type)" />{{filterItem.name}}</label>
+      </li>
+    </ul>
+  </li>
+</ul>

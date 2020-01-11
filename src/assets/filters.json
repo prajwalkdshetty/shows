@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Species",
+    "types": [
+      {
+        "type": "human",
+        "name": "Human"
+      },
+      {
+        "type": "mytholog",
+        "name": "Mytholog"
+      },
+      {
+        "type": "other",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Gender",
+    "types": [
+      {
+        "type": "male",
+        "name": "Male"
+      },
+      {
+        "type": "female",
+        "name": "Female"
+      }
+    ]
+  },
+  {
+    "name": "Origin",
+    "types": [
+      {
+        "type": "human",
+        "name": "Human"
+      },
+      {
+        "type": "mytholog",
+        "name": "Mytholog"
+      },
+      {
+        "type": "other",
+        "name": "Other"
+      }
+    ]
+  }
+]
