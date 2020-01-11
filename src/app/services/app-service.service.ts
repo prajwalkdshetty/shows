@@ -12,7 +12,7 @@ export class AppServiceService {
   constructor(private http: HttpClient) { }
 
   getShows(): Observable<Shows[]> {
-    return this.http.get('./assets/filters.json')
+    return this.http.get('./assets/shows.json')
     .pipe(catchError(error => {
       console.log('Error occured while fetching shows. Error is ' + error);
       return [];

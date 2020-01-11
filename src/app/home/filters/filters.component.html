@@ -1,9 +1,17 @@
-<ul>
-  <li *ngFor="let filter of filters" >
-    <h3>{{filter.name}}</h3>
+<ul class="col-sm-12 col-md-9">
+  <li *ngFor="let filter of filters" class="filter-blocks">
+    <h5>{{ filter.name }}</h5>
     <ul>
-      <li *ngFor="let filterItem of filter.types" >
-          <label><input type="checkBox" name="{{filterItem.name}}" (change)="filterSelected(filterItem.name, filterItem.type)" />{{filterItem.name}}</label>
+      <li *ngFor="let filterItem of filter.types">
+        <div class="checkbox">
+          <label
+            ><input
+              type="checkBox"
+              name="{{ filterItem.name }}"
+              (change)="filterSelected(filterItem.name, filterItem.type)"
+            />{{ filterItem.name }}</label
+          >
+        </div>
       </li>
     </ul>
   </li>

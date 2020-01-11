@@ -1,15 +1,18 @@
-<!-- <div class="col-md-3">
+<div class="card">
   <div class="image-container">
-    <img src="./../../../assets/img/{{data.image}}.png" alt="{{data.image}}">
+    <img
+      src="./../../../assets/img/{{ data.Image }}.png"
+      alt="{{ data.Image }}"
+    />
     <div class="overlay">
-      <h4>{{data.title}}</h4>
-      <p> Id: {{data.id}} - created on {{data.created}}</p>
+      <h4>{{ data.Name }}</h4>
+      <p>Id: {{ data.Id }} - created on {{ data.Created }}</p>
     </div>
+  </div>
     <ul>
-        <li *ngFor="let detail of data.details" >
-          <span class="label">{{detail}}</span><span></span>
+      <li *ngFor="let detail of data.details | keyvalue" class="details">
+        <span class="label">{{ detail.key }}</span>
+        <span class="value">{{ detail.value }}</span>
       </li>
     </ul>
-  </div>
-
-</div> -->
+</div>
